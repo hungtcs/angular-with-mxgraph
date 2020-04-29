@@ -1,27 +1,19 @@
-# AngularWithMxgraph
+Angular With mxGraph
+====
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+a demo project of Angular and mxGraph.
 
-## Development server
+### Run This Demo
+```shell
+git clone --recursive https://github.com/hungtcs/angular-with-mxgraph.git
+cd angular-with-mxgraph
+npm start
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### How to make mxgraph work with angular in your project
+1. download mxGraph and put to `/src/assets/lib`
+2. add `src/assets/lib/mxgraph/javascript/mxClient.js` to `angular.json` in `build.options.scripts`
+3. set `mxBasePath` to `/assets/lib/mxgraph/javascript/src` in `index.html`
+4. put [`mxgraph-type-definitions`](https://github.com/hungtcs/mxgraph-type-definitions) under `src/types`
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+now your can use mxGraph everywhere in your project.
